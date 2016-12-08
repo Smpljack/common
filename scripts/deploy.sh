@@ -4,6 +4,7 @@ export BASEDIR="${SCRIPTDIR}/.."
 export GENERATORDIR="${BASEDIR}/page_generator"
 export OUTPUTDIR="${BASEDIR}/docs/generated"
 
+git checkout master
 echo "generating pages..."
 ${GENERATORDIR}/generate.sh
 echo "showing changes..."
