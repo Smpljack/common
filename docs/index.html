@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">NARVAL-II Collaboration Site</h1>
+  <h2>generated information</h2>
+  <ul class="post-list">
+    <li>
+        <a class="post-link" href="{{ site.baseurl }}/generated/specmacs_overview.html">specMACS overview</a>
+    </li>
+  </ul>
+
+  <h2>posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h3>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
