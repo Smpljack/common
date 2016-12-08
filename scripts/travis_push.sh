@@ -4,4 +4,4 @@ if [ -z "${GH_TOKEN}" ]; then
     exit
 fi
 git remote set-url --push origin https://${GH_TOKEN}@github.com/d70-t/narval-ii.git > /dev/null
-git push
+git push origin
