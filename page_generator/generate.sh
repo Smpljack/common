@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "foo baz" > "${OUTPUTDIR}/bar.txt"
+echo "foo baz2" > "${OUTPUTDIR}/bar.txt"
