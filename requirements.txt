@@ -1,2 +1,5 @@
 pyyaml
 jinja2
+requests
+numpy
+pillow
