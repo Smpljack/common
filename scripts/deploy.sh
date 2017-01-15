@@ -1,12 +1,17 @@
 #!/bin/bash
-export SCRIPTDIR=`dirname $0`
+SCRIPTDIR=`dirname $0`
+export SCRIPTDIR=`realpath ${SCRIPTDIR}`
 export BASEDIR="${SCRIPTDIR}/.."
 export GENERATORDIR="${BASEDIR}/page_generator"
 export OUTPUTDIR="${BASEDIR}/docs/generated"
+export PYTHONPATH="${BASEDIR}/python:${PYTHONPATH}"
 
 git checkout master
 echo "generating pages..."
-${GENERATORDIR}/generate.sh
+pushd .
+cd ${GENERATORDIR}
+./generate.sh
+popd
 echo "showing changes..."
 git diff "${OUTPUTDIR}"
 echo "deploying..."
