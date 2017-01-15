@@ -1,6 +1,7 @@
 pyyaml
 jinja2
 requests
+requests_cache
 numpy
 pillow
 matplotlib

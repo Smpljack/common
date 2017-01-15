@@ -1,0 +1,22 @@
+---
+layout: page
+---
+<div id="home">
+    <h1 class="page-heading">NARVAL-II flights</h1>
+    {% for flight in flights %}
+    <h2>{{ flight.name }}</h2>
+    Date: {{ flight.date }}
+    <h3>Segments:</h3>
+    <ul>
+        {% for segment in flight.segments %}
+        <li><span style="background-color: {{ segment.color.html }}">{{ segment.name }} {{ segment.start_time.strftime("%H:%M:%S") }} -&gt; {{ segment.end_time.strftime("%H:%M:%S") }}</span>
+            <ul>
+                {% for sonde in segment.dropsondes %}
+                <li>{{ sonde.ds_id }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

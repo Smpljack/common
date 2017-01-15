@@ -12,9 +12,13 @@ Currently, you can find:
 To use the python metadata library, please add the ``python``-folder to your ``PYTHONPATH`` environment variable.
 You can now access the metadata using something like:
 
-    import narval_ii.metadata
-    flights = narval_ii.metadata.load_flights()
-    for flight in flights:
-        print(flight.name)
-        for segment in flight.segments:
-            print(segment.name, segment.start_time, segment.end_time)
+```python
+import narval_ii.metadata
+flights = narval_ii.metadata.load_flights()
+for flight in flights:
+    print(flight.name)
+    for segment in flight.segments:
+        print(segment.name, segment.start_time, segment.end_time)
+        for dropsonde in segment.dropsondes:
+            print(dropsonde.date)
+```
