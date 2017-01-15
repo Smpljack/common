@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "foo baz2" > "${OUTPUTDIR}/bar.txt"
+python generate_flights.py ${OUTPUTDIR}

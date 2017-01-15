@@ -1,0 +1,134 @@
+RF02:
+  color: lemonchiffon
+  date: 20160810
+  segments:
+  - color: lightgreen
+    name: s1
+    times: [122720, 130750]
+  - color: dodgerblue
+    name: c1
+    times: [132600, 141020]
+  - color: gray
+    name: c2
+    times: [141450, 145950]
+  - color: lightgreen
+    name: s2
+    times: [154333, 155000]
+  - color: lightgreen
+    name: s3
+    times: [155143, 160331]
+  - color: lightgreen
+    name: s4
+    times: [160850, 161756]
+  - color: lightgreen
+    name: s5
+    times: [162225, 163245]
+  - color: lightgreen
+    name: s6
+    times: [163740, 164630]
+  - color: lightgreen
+    name: s7
+    times: [165055, 170132]
+  - color: orange
+    name: c3
+    times: [171100, 175210]
+  - color: firebrick
+    name: c4
+    times: [175610, 183052]
+RF03:
+  color: lightblue
+  date: 20160812
+  segments:
+  - color: lightgreen
+    name: s1
+    times: [115950, 124025]
+  - color: lightgreen
+    name: m1
+    times: [124025, 124405]
+  - color: dodgerblue
+    name: c1
+    times: [130645, 135100]
+  - color: gray
+    name: c2
+    times: [135600, 144150]
+  - color: lightgreen
+    name: s3
+    times: [144200, 165500]
+  - color: lightgreen
+    name: s2
+    times: [144320, 165220]
+  - color: orange
+    name: c3
+    times: [165605, 173902]
+  - color: firebrick
+    name: c4
+    times: [174415, 183020]
+RF04: {color: saddlebrown, date: 20160815}
+RF05: {color: mediumblue, date: 20160817}
+RF06:
+  color: deepskyblue
+  date: 20160819
+  segments:
+  - color: lightgreen
+    name: s1
+    times: [124530, 133600]
+  - color: rose
+    name: m1
+    times: [133600, 134020]
+  - color: dodgerblue
+    name: c1
+    times: [134558, 143310]
+  - color: gray
+    name: c2
+    times: [143918, 152735]
+  - color: lightgreen
+    name: s2
+    times: [154122, 155425]
+  - color: lightgreen
+    name: s3
+    times: [160020, 162620]
+  - color: green
+    name: s4
+    times: [162953, 170230]
+  - color: orange
+    name: c3
+    times: [170958, 175819]
+  - color: firebrick
+    name: c4
+    times: [180406, 185242]
+  - color: darkgreen
+    name: s5
+    times: [202617, 202800]
+RF07:
+  color: darkorange
+  date: 20160822
+  segments:
+  - color: lightgreen
+    name: s1
+    times: [133200, 145250]
+  - color: green
+    name: s2
+    times: [145400, 150720]
+  - color: dodgerblue
+    name: c1
+    times: [151210, 161200]
+  - color: gray
+    name: c2
+    times: [162213, 170435]
+  - color: darkgreen
+    name: s3
+    times: [171500, 173500]
+  - color: orange
+    name: c3
+    times: [173613, 183603]
+  - color: firebrick
+    name: c4
+    times: [183923, 194123]
+  - color: rose
+    name: m1
+    times: [194618, 195100]
+  - color: darkgreen
+    name: s4
+    times: [195100, 204110]
+RF08: {color: forestgreen, date: 20160824}
+RF09: {color: lightgreen, date: 20160826}
