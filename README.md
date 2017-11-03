@@ -8,6 +8,7 @@ Currently, you can find:
 * the ``metadata`` folder, containing a growing collection of metadata
 * the ``python`` folder, containing the ``narval_ii`` python package with tools to access data and metadata
 * the ``docs`` folder, containing the sources for the web page found at https://d70-t.github.io/narval-ii/
+* the ``drawings`` folder, containing drawings for common use.
 
 To use the python metadata library, please add the ``python``-folder to your ``PYTHONPATH`` environment variable.
 You can now access the metadata using something like:
