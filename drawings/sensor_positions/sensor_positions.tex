@@ -36,6 +36,7 @@
     \def\SMARTofs{-2}
     \def\specMACSVNIRofs{2.5}
     \def\specMACSSWIRofs{2.6}
+    \def\specMACSSWIRactofs{0.55}
 
     \coordinate (nadir) at (0,0);
     \coordinate (SMARTcenter) at ($ (nadir) + (\SMARTofs,0) $);
@@ -43,7 +44,7 @@
     \coordinate (RADARcenter) at ($ (nadir) + (0,0) $);
     \coordinate (HAMPcenter) at ($ (nadir) + (0,0) $);
     \coordinate (specMACSVNIRcenter) at ($ (nadir) + (\specMACSVNIRofs,0) $);
-    \coordinate (specMACSSWIRcenter) at ($ (nadir) + (\specMACSSWIRofs,0) $);
+    \coordinate (specMACSSWIRcenter) at ($ (nadir) + (\specMACSSWIRofs,\specMACSSWIRactofs) $);
 
     \def\SMARThwhm{1.05}
     \def\WALEShwhm{0.04584}
@@ -89,15 +90,18 @@
     \draw[hampB] (HAMPcenter) circle [radius=\HAMPBhwhm];
 
     \draw[-,specmacsVNIR] ($ (specMACSVNIRcenter) + (-90: \specMACSVNIRacthwhm) $) -- (4, -1.4) node[specmacsVNIR, anchor=west]{specMACS VNIR $\updownarrow$ \fwhm{\specMACSVNIRacthwhm}\degree, $\leftrightarrow$ \fwhm{\specMACSVNIRalthwhm}\degree};
+    \draw[-,black] ($ (specMACSVNIRcenter) + (0,0.1) $) --($ (specMACSVNIRcenter) - (0,0.1) $) node[smart, anchor=north]{\specMACSVNIRofs\degree}; 
     \draw[-,specmacsSWIR] ($ (specMACSSWIRcenter) + (-90: \specMACSSWIRacthwhm) $) -- (4, -1.0) node[specmacsSWIR, anchor=west]{specMACS SWIR $\updownarrow$ \fwhm{\specMACSSWIRacthwhm}\degree, $\leftrightarrow$ \fwhm{\specMACSSWIRalthwhm}\degree};
+    \draw[-,black] ($ (specMACSSWIRcenter) - (0,0.1) $) --($ (specMACSSWIRcenter) + (0,0.1) $) -- ($ (specMACSSWIRcenter) + (0.2,0.3) $) node[black, anchor=west]{\specMACSSWIRofs\degree}; 
+    \draw[-,black] ($ (specMACSSWIRcenter) - (0.1,0) $) --($ (specMACSSWIRcenter) + (0.2,0) $) node[black, anchor=west]{\specMACSSWIRactofs\degree}; 
     \draw ($ (SMARTcenter) + (135: \SMARThwhm) $) node[smart, anchor=south east]{SMART \diameter \fwhm{\SMARThwhm}\degree};
     \draw[-,smart] ($ (SMARTcenter) + (0,0.1) $) --($ (SMARTcenter) - (0,0.1) $) node[smart, anchor=north]{\SMARTofs\degree}; 
     \draw[-,wales] (-30: \WALEShwhm) -- (4, -0.3) node[wales, anchor=west]{WALES \diameter \fwhmwales{\WALEShwhm}\degree};
     \draw[-,radar] (30: \RADARhwhm) -- (4, 0.3) node[radar, anchor=west]{HAMP RADAR \diameter \fwhm{\RADARhwhm}\degree};
-    \draw[-,hampK] (53: \HAMPKhwhm) -- (4, 2.2) node[hampK, anchor=west]{HAMP K \diameter \fwhm{\HAMPKhwhm}\degree};
-    \draw[-,hampV] (60: \HAMPVhwhm) -- (4, 1.8) node[hampV, anchor=west]{HAMP V \diameter \fwhm{\HAMPVhwhm}\degree};
-    \draw[-,hampA] (45: \HAMPAhwhm) -- (4, 1.4) node[hampA, anchor=west]{HAMP 119 90 \diameter \fwhm{\HAMPAhwhm}\degree};
-    \draw[-,hampB] (35: \HAMPBhwhm) -- (4, 1.0) node[hampB, anchor=west]{HAMP 183 \diameter \fwhm{\HAMPBhwhm}\degree};
+    \draw[-,hampK] (53: \HAMPKhwhm) -- (4, 3.2) node[hampK, anchor=west]{HAMP K \diameter \fwhm{\HAMPKhwhm}\degree};
+    \draw[-,hampV] (55: \HAMPVhwhm) -- (4, 2.8) node[hampV, anchor=west]{HAMP V \diameter \fwhm{\HAMPVhwhm}\degree};
+    \draw[-,hampA] (45: \HAMPAhwhm) -- (4, 2.4) node[hampA, anchor=west]{HAMP 119 90 \diameter \fwhm{\HAMPAhwhm}\degree};
+    \draw[-,hampB] (35: \HAMPBhwhm) -- (4, 2.0) node[hampB, anchor=west]{HAMP 183 \diameter \fwhm{\HAMPBhwhm}\degree};
 
 
 \end{tikzpicture}
