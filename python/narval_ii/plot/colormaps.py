@@ -1,27 +1,7 @@
 from matplotlib.colors import LinearSegmentedColormap
 
-_WALES_BSR_CDICT = {
-    "red": (
-        (0.0, 0.8, 0.8),
-        (0.1, 0.0, 0.0),
-        (0.3, 0.0, 0.0),
-        (0.6, 1.0, 1.0),
-        (0.7, 1.0, 1.0),
-        (1.0, 0.3, 0.3)
-    ),
-    "green": (
-        (0.0, 0.9, 0.9),
-        (0.1, 0.0, 0.0),
-        (0.3, 0.8, 0.8),
-        (0.6, 0.8, 0.8),
-        (0.8, 0.0, 0.0),
-        (1.0, 0.0, 0.0),
-    ),
-    "blue": (
-        (0.0, 1.0, 1.0),
-        (0.25, 0.0, 0.0),
-        (1.0, 0.0, 0.0),
-    ),
-}
+WALES_BSR = LinearSegmentedColormap.from_list('WALES_BSR', """#cce5ff
+    #99ccff #7399ff #4d66ff #264cd9 #0033b3 #005993 #008073 #008c39 #009900 #20a620 #40b340
+    #81cd43 #c2e847 #e0f323 #ffff00 #ffef00 #ffe000 #ffc426 #ffa84d #ff8833 #ff691a #f2470d
+    #e62600 #d21300 #bf0000 #ac0000 #990000 #4c0000""".split())
 
-WALES_BSR = LinearSegmentedColormap('WALES_BSR', _WALES_BSR_CDICT)
