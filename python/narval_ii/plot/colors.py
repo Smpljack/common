@@ -1,0 +1,5 @@
+HAMP = ["orange", "chocolate"]
+SMART = ["royalblue", "darkblue"]
+WALES = ["C2"]
+SPECMACS = ["C3", "darkred"]
+RADAR = ["C6"]
